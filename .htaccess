@@ -1,0 +1,10 @@
+	<Directory /var/www/py-experiments/>
+	  Options Indexes FollowSymLinks MultiViews
+	  AllowOverride None
+	  Order allow,deny
+	  allow from all
+	  AddHandler mod_python .py
+	  PythonHandler mod_python.publisher
+	  PythonDebug On
+	</Directory>
+
